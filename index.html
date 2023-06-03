@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sign Up Form</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tsukimi+Rounded:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        :root {
+            background-color: #e8e7e0;
+        }
+        h1 {
+            font-family: 'Tsukimi Rounded', sans-serif;
+            margin-bottom: 2%;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3%;
+        }
+        #email {
+            width: 50%;
+            font-style: italic;
+            border: none;
+            background: transparent;
+            border-bottom: 2px solid;
+            text-align: center;
+            outline: none;
+        }
+        #button-div {
+            display: flex;
+            justify-content: center;
+        }
+        button {
+            border: none;
+            background-color: black;
+            color: white;
+            padding: 15px 50px;
+            font-family: 'Tsukimi Rounded', sans-serif;
+            margin-bottom: 3%;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        #images > *:hover {
+            cursor: help;
+            transform: translateY(3px);
+        }
+        #images {
+            display: flex;
+            justify-content: space-around;
+        }
+        h3, p{
+            text-align: center;
+            font-family: 'Tsukimi Rounded', sans-serif;
+        }
+        .text {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <body>
+        <h1 align="center">Sign Up For Exclusive Access</h1>
+        <form>
+            <input type="text" id="email" name="email-enter" placeholder="enter your email here" required>
+        </form>
+        <div id="button-div">
+            <button>SEND</button>
+        </div>
+        <div id="images">
+            <svg xmlns="http://www.w3.org/2000/svg" id="shipping" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M16 12.5l-5 -3l5 -3l5 3v5.5l-5 3z"></path>
+                <path d="M11 9.5v5.5l5 3"></path>
+                <path d="M16 12.545l5 -3.03"></path>
+                <path d="M7 9h-5"></path>
+                <path d="M7 12h-3"></path>
+                <path d="M7 15h-1"></path>
+            </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" id="heart" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19.5 12.572l-7.5 7.428l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path>
+             </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" id="wallet" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M17 8v-3a1 1 0 0 0 -1 -1h-10a2 2 0 0 0 0 4h12a1 1 0 0 1 1 1v3m0 4v3a1 1 0 0 1 -1 1h-12a2 2 0 0 1 -2 -2v-12"></path>
+                <path d="M20 12v4h-4a2 2 0 0 1 0 -4h4"></path>
+             </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" id="lock" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M5 13a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v6a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-6z"></path>
+                <path d="M11 16a1 1 0 1 0 2 0a1 1 0 0 0 -2 0"></path>
+                <path d="M8 11v-4a4 4 0 1 1 8 0v4"></path>
+             </svg>
+             <svg xmlns="http://www.w3.org/2000/svg" id="support" width="50" height="50" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                <path d="M12 17l0 .01"></path>
+                <path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4"></path>
+             </svg>
+        </div>
+        <div class="text">
+            <div id="shipping-text">
+                <h3>FREE shipping</h3>
+                <em><p>All orders above $99.</p></em>
+            </div>
+            <div id="heart-text">
+                <h3>3 Days Delivery.</h3>
+                <em><p>Carefully packed with love.</p></em>
+            </div>
+            <div id="wallet-text">
+                <h3>Buy now, pay later.</h3>
+                <em><p>With Karnos credit card.</p></em>
+            </div>
+            <div id="lock-text">
+                <h3>Safe payments.</h3>
+                <em><p>Secure online payments.</p></em>
+            </div>
+            <div id="support-text">
+                <h3>Support 24/7</h3>
+                <em><p>(000) 000-0000</p></em>
+            </div>
+        </div>
+    </body>
+</html>
+
+<!--
+    inspiration: https://lirp.cdn-website.com/cc407b53/dms3rep/multi/opt/flexbox-example-form-fields-4-min-1920w.jpg
+-->
